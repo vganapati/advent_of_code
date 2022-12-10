@@ -1,0 +1,25 @@
+$ cd /
+$ ls
+dir ccjp
+328708 hglnvs.bsh
+dir hpsnpc
+dir pcb
+dir pntzm
+dir pzg
+dir thfgwwsp
+$ cd ccjp
+$ ls
+159990 dlz
+dir mbtsvblj
+165076 nppbjl.qhg
+$ cd mbtsvblj
+$ ls
+34806 frqsf.nsv
+dir ppq
+dir ptht
+dir rgmvdwt
+$ cd ppq
+$ ls
+10 dhzp
+$ cd ..
+$ cd ptht

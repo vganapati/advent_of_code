@@ -1,0 +1,14 @@
+$ cd /
+$ ls
+dir jjshzrhd
+dir jlfz
+dir vqvvwgt
+dir zcqbt
+$ cd jjshzrhd
+$ ls
+dir jjshzrhd
+30000001 gfhfplmm
+9990001 gfhfplmm
+$ cd jjshzrhd
+$ ls
+81645 gfhfplmm
