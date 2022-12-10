@@ -19,6 +19,7 @@ def total_size(data):
             file_total += int(size)
     return(file_total)
 
+    
 def create_tree(data):
     nodes = []
     
@@ -60,15 +61,12 @@ def get_size(node):
 def part1(data):
     """Solve part 1."""
     nodes=create_tree(data)
-    size_dict={}
+    total=0
     for node in PreOrderIter(nodes[1]):
         if node.folder == True:
-            size_dict[node.id]=get_size(node)
-            
-    total=0
-    for key in size_dict.keys():
-        if size_dict[key]<=100000:
-            total+=size_dict[key]
+            size = get_size(node)
+            if size<=100000:
+                total+=size
     return(total)
             
 
@@ -76,6 +74,17 @@ def part1(data):
 
 def part2(data):
     """Solve part 2."""
+    nodes=create_tree(data)
+    size_list=[]
+    for node in PreOrderIter(nodes[1]):
+        if node.folder == True:
+            size = get_size(node)
+            size_list.append(size)
+
+    size_list = np.array(size_list)
+    desired_unused_space = 30000000
+    unused_space_vec = 70000000 - size_list[0] + size_list # unused space if we remove that directory
+    return(np.min(size_list[unused_space_vec >= desired_unused_space]))
 
 
 def solve(puzzle_input):
