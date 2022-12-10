@@ -22,25 +22,21 @@ def example2():
     return aoc202208.parse_data(puzzle_input)
 
 
-@pytest.mark.skip(reason="Not implemented")
+
 def test_parse_example1(example1):
     """Test that input is parsed properly."""
-    assert example1 == ...
+    assert example1 == [[3,0,3,7,3],
+                        [2,5,5,1,2],
+                        [6,5,3,3,2],
+                        [3,3,5,4,9],
+                        [3,5,3,9,0]]
 
 
-@pytest.mark.skip(reason="Not implemented")
 def test_part1_example1(example1):
     """Test part 1 on example input."""
-    assert aoc202208.part1(example1) == ...
+    assert aoc202208.part1(example1) == 21
 
 
-@pytest.mark.skip(reason="Not implemented")
 def test_part2_example1(example1):
     """Test part 2 on example input."""
-    assert aoc202208.part2(example1) == ...
-
-
-@pytest.mark.skip(reason="Not implemented")
-def test_part2_example2(example2):
-    """Test part 2 on example input."""
-    assert aoc202208.part2(example2) == ...
+    assert aoc202208.part2(example1) == 8
