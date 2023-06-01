@@ -1,2 +1,3 @@
-# advent_of_code
- Advent of Code Solutions
+#  Advent of Code Solutions
+
+25 days of coding puzzles, see for reference [https://adventofcode.com](https://adventofcode.com).
