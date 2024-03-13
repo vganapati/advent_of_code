@@ -44,3 +44,8 @@ def test_part2_example1(example1):
 def test_part2_example2(example2):
     """Test part 2 on example input."""
     assert aoc202219.part2(example2) == ...
+
+if __name__ == "__main__":
+    puzzle_input = (PUZZLE_DIR / "example1.txt").read_text().rstrip()
+    dict = aoc202219.parse_data(puzzle_input)
+    breakpoint()
